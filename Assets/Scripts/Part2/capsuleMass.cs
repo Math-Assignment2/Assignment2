@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class squareMass : MonoBehaviour
+public class capsuleMass : MonoBehaviour
 {
     private Vector3 velocity;
-    private float mass = 10f; 
+    private float mass = 30f; 
     private float gravity = -9.8f;
 
     public GameObject groundPlane; 

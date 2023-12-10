@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4564168}
   - component: {fileID: 4564170}
+  - component: {fileID: 4564171}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -207,6 +208,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4564171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6abc3a8d109e80944a7c7e3140dbd362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundPlane: {fileID: 1546543796}
 --- !u!1 &676507546
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1082159960}
   - component: {fileID: 1082159962}
+  - component: {fileID: 1082159963}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -325,6 +340,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1082159963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082159959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ebaa31649d16947b15fdd37a44c768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundPlane: {fileID: 1546543796}
 --- !u!1 &1546543796
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,8 +453,8 @@ Transform:
   m_GameObject: {fileID: 1546543796}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -620,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de686d36774510a4882a06813286ea96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Square: {fileID: 1763149550}
+  groundPlane: {fileID: 1546543796}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

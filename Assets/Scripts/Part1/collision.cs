@@ -116,7 +116,7 @@ public class collision : MonoBehaviour
             circleRadius, out _);
 
         circle.GetComponent<SpriteRenderer>().color = circleCapsuleCollision || squareCircleCollision ? Color.green : Color.red;
-        square.GetComponent<SpriteRenderer>().color = squareCircleCollision ? Color.green : Color.red;
+        square.GetComponent<SpriteRenderer>().color = squareCircleCollision || squareCapsuleCollision ? Color.green : Color.red;
         capsule.GetComponent<SpriteRenderer>().color = circleCapsuleCollision || squareCapsuleCollision || squareCapsuleCollision ? Color.green : Color.red;
     }
 }
